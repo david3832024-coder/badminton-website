@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
 
-    const animatedElements = document.querySelectorAll('.card, .skill-item, .equipment-card');
+    const animatedElements = document.querySelectorAll('.card, .skill-item, .video-card, .equipment-card');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';

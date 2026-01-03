@@ -12,7 +12,9 @@
       "Bash(git config:*)",
       "Bash(gh auth status:*)",
       "Bash(GIT_CURL_VERBOSE=1 GIT_TRACE=1 timeout 30 git push:*)",
-      "Bash(ping:*)"
+      "Bash(ping:*)",
+      "Bash(gh repo view:*)",
+      "WebSearch"
     ]
   }
 }

@@ -297,6 +297,62 @@ body {
     color: var(--primary-color);
 }
 
+.video-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.video-card {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.video-thumbnail {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-thumbnail iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.video-card h3 {
+    padding: 20px 20px 10px;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.video-card p {
+    padding: 0 20px 20px;
+    margin: 0;
+    color: #555;
+    line-height: 1.6;
+}
+
 .about-content {
     max-width: 800px;
     margin: 0 auto;
@@ -370,7 +426,12 @@ body {
 
     .cards-grid,
     .skills-grid,
+    .videos-grid,
     .equipment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .videos-grid {
         grid-template-columns: 1fr;
     }
 
