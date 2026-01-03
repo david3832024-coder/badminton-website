@@ -353,6 +353,21 @@ body {
     line-height: 1.6;
 }
 
+.video-note {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: var(--light-color);
+    border-radius: 10px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.video-note p {
+    margin: 0;
+    color: #555;
+    font-size: 1rem;
+}
+
 .about-content {
     max-width: 800px;
     margin: 0 auto;
